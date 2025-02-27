@@ -19,14 +19,14 @@ optionImages.forEach((image,index) =>{
             
             let outComes = {
                 RR:"Draw",
-                RS:"Cpu",
-                RP:"User",
+                RS:"User",
+                RP:"CPU",
                 PP:"Draw",
-                PS:"User",
-                PR:"Cpu",
+                PS:"CPU",
+                PR:"User",
                 SS:"Draw",
-                SR:"User",
-                SP:"Cpu",
+                SR:"CPU",
+                SP:"User",
             };
             let outComeValue = outComes[userValue + cpuValue];
             result.textContent = userValue === cpuValue ? "Match Draw" : `${outComeValue} Won!!`;
